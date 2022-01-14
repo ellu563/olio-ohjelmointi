@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookExercise", "Projekti1\BookExercise.csproj", "{B82A7363-96B9-4060-8401-98B1587881DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarExcercise", "CarExcercise\CarExcercise.csproj", "{2FABF521-B0A7-4120-9166-77A5D0990ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyExcercise", "CompanyExcercise\CompanyExcercise.csproj", "{D8235F7F-1040-4772-8D15-F284ECC600AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B82A7363-96B9-4060-8401-98B1587881DB}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{B82A7363-96B9-4060-8401-98B1587881DB}.Debug|anycpu.Build.0 = Debug|anycpu
+		{B82A7363-96B9-4060-8401-98B1587881DB}.Release|anycpu.ActiveCfg = Release|anycpu
+		{B82A7363-96B9-4060-8401-98B1587881DB}.Release|anycpu.Build.0 = Release|anycpu
+		{2FABF521-B0A7-4120-9166-77A5D0990ED0}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{2FABF521-B0A7-4120-9166-77A5D0990ED0}.Debug|anycpu.Build.0 = Debug|anycpu
+		{2FABF521-B0A7-4120-9166-77A5D0990ED0}.Release|anycpu.ActiveCfg = Release|anycpu
+		{2FABF521-B0A7-4120-9166-77A5D0990ED0}.Release|anycpu.Build.0 = Release|anycpu
+		{D8235F7F-1040-4772-8D15-F284ECC600AF}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{D8235F7F-1040-4772-8D15-F284ECC600AF}.Debug|anycpu.Build.0 = Debug|anycpu
+		{D8235F7F-1040-4772-8D15-F284ECC600AF}.Release|anycpu.ActiveCfg = Release|anycpu
+		{D8235F7F-1040-4772-8D15-F284ECC600AF}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F33806E1-79C3-441E-9393-F5F89A1502D9}
+	EndGlobalSection
+EndGlobal
