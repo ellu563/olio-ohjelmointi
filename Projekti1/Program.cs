@@ -8,7 +8,7 @@ namespace BookExercise
         {
             Console.WriteLine("This is book excercise");
             Book book1 = new Book(); // olio kirjotetaan aina pienellä book1 ja luokka isolla
-            book1.title = "Keppana";
+            book1.title = "Keppana"; // joo
             book1.SetId("12345"); // tähän käy myös merkkijono kun se on string tyyppinen... abcde
             Console.WriteLine("Ensimmäinen kirja: " + book1.title);
 
