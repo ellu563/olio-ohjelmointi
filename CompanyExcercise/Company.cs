@@ -4,33 +4,36 @@ namespace CompanyExcercise
     public class Company
     {
         // esitellään kentät
-        public string title;
+        public string title; 
         public string address;
         public string phone; // string siksi jos puhelinnumerossa esim plus merkki
         public double outcome;
         public double expense;
 
-        public bool IsInitialized;
-
-        // oletusmuodostin joopelis joo
+        // oletusmuodostin "tyhjä constructori"
         public Company()
         {
-            IsInitialized = true;
-        }
-
-        // muodostin joka sisältää kaikki parametrit
-        public Company(string title, string address, string phone, double outcome, double expense)
-        {
-            this.title = string.Empty; 
+            this.title = string.Empty;
             this.address = string.Empty;
             this.phone = string.Empty;
             this.outcome = 0;
             this.expense = 0;
         }
 
-        // kopiointimuodostin
-        public Company(Company previousCompany)
+        // muodostin joka sisältää kaikki parametrit
+        public Company(string title, string address, string phone, double outcome, double expense)
         {
+            this.title = title; // company olion this.title on toi parametri title
+            this.address = address;
+            this.phone = phone;
+            this.outcome = outcome;
+            this.expense = expense;
+        }
+
+        // kopiointimuodostin
+        public Company(Company previousCompany) // tulee toinen olio minkä nimi on previousCompany
+        {
+            // olio on saamaa tyyppiä ku toi edellinen
             this.title = previousCompany.title;
             this.address = previousCompany.address;
             this.phone = previousCompany.phone;
@@ -42,27 +45,37 @@ namespace CompanyExcercise
         public void firmanVoitto()
         {
             double voittoProsentti = (this.outcome - this.expense) / this.expense * 100;
+            double iteVoitto = this.outcome - this.expense;
 
             if(voittoProsentti < 100)
             {
-                Console.WriteLine("Kehnosti");
+                Console.WriteLine(this.title + " firmalla menee kehnosti");
                 // kehnosti, jos voitto on alle 100% suurempi kuin menot
             }
-            if (voittoProsentti <= 300)
+            else if (voittoProsentti <= 200)
             {
-                Console.WriteLine("Välttävästi");
+                Console.WriteLine(this.title + " firmalla menee välttävästi");
                 // välttävästi, jos voitto on enintään 200% suurempi kuin menot
             }
-            if ()
+            else if (voittoProsentti >= 200)
             {
-                Console.WriteLine("Tyydyttävästi");
+                Console.WriteLine(this.title + " firmalla menee tyydyttävästi");
                 // tyydyttävästi, jos voitto on vähintään 200 % suurempi kuin menot
             }
-            if ()
+            else if (voittoProsentti >= 300)
             {
-                Console.WriteLine("Hyvin");
+                Console.WriteLine(this.title + " firmalla menee hyvin");
                 // hyvin, jos voitto on vähintään 300% suurempi kuin menot
             }
+        }
+        public void PrintInfo()
+        {
+            Console.WriteLine(this.title + ", " + this.address + ", "+ this.phone + ", " + this.outcome + ", " + this.expense);
+        }
+
+        public override string ToString()
+        {
+            return $"luokka: {base.ToString()}, nimi: {this.title}, osoite: {this.address}, puh: {this.phone}, tulot: {this.outcome}, menot: {this.expense}";
         }
     }
 }
