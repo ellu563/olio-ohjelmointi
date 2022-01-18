@@ -45,7 +45,6 @@ namespace CompanyExcercise
         public void firmanVoitto()
         {
             double voittoProsentti = (this.outcome - this.expense) / this.expense * 100;
-            double iteVoitto = this.outcome - this.expense;
 
             if(voittoProsentti < 100)
             {
