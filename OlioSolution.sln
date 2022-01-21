@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarExcercise", "CarExcercis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyExcercise", "CompanyExcercise\CompanyExcercise.csproj", "{D8235F7F-1040-4772-8D15-F284ECC600AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeExercise", "EmployeeExercise\EmployeeExercise.csproj", "{80084BF1-0050-4BC6-B888-7E7E12DBA9CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -27,6 +29,10 @@ Global
 		{D8235F7F-1040-4772-8D15-F284ECC600AF}.Debug|anycpu.Build.0 = Debug|anycpu
 		{D8235F7F-1040-4772-8D15-F284ECC600AF}.Release|anycpu.ActiveCfg = Release|anycpu
 		{D8235F7F-1040-4772-8D15-F284ECC600AF}.Release|anycpu.Build.0 = Release|anycpu
+		{80084BF1-0050-4BC6-B888-7E7E12DBA9CA}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{80084BF1-0050-4BC6-B888-7E7E12DBA9CA}.Debug|anycpu.Build.0 = Debug|anycpu
+		{80084BF1-0050-4BC6-B888-7E7E12DBA9CA}.Release|anycpu.ActiveCfg = Release|anycpu
+		{80084BF1-0050-4BC6-B888-7E7E12DBA9CA}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
