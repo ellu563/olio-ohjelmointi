@@ -29,17 +29,20 @@ namespace EmployeeExercise
             else if (this.salary == employee.salary)
             {
                 Console.WriteLine("Palkat " + employee.salary + " & " + this.salary + " ovat samansuuruiset");
+            } else
+            {
+                Console.WriteLine("Virhe");
             }
         }
 
         public void PrintEmployeeInfo()
         {
-            Console.WriteLine($"{this.name} {this.id} {this.position} {this.salary}");
+            Console.WriteLine($"{this.name}, {this.id}, {this.position}, {this.salary}");
         }
 
         public override string ToString()
         {
-            return $"{this.name} {this.id} {this.position} {this.salary}"; 
+            return $"luokka: { base.ToString()}, nimi: {this.name}, id: {this.id}, position: {this.position}, palkka: {this.salary}"; 
         }
     }
 }
