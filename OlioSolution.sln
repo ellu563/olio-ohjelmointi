@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyExcercise", "Company
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeExercise", "EmployeeExercise\EmployeeExercise.csproj", "{80084BF1-0050-4BC6-B888-7E7E12DBA9CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Literature", "BookAndAuthor\Literature.csproj", "{39AEA189-71D8-4523-A0C8-27D8CF7632FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicle", "Vehicle\Vehicle.csproj", "{A9E5A76B-1CE7-4870-8925-EE445ED73A80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -33,6 +37,14 @@ Global
 		{80084BF1-0050-4BC6-B888-7E7E12DBA9CA}.Debug|anycpu.Build.0 = Debug|anycpu
 		{80084BF1-0050-4BC6-B888-7E7E12DBA9CA}.Release|anycpu.ActiveCfg = Release|anycpu
 		{80084BF1-0050-4BC6-B888-7E7E12DBA9CA}.Release|anycpu.Build.0 = Release|anycpu
+		{39AEA189-71D8-4523-A0C8-27D8CF7632FD}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{39AEA189-71D8-4523-A0C8-27D8CF7632FD}.Debug|anycpu.Build.0 = Debug|anycpu
+		{39AEA189-71D8-4523-A0C8-27D8CF7632FD}.Release|anycpu.ActiveCfg = Release|anycpu
+		{39AEA189-71D8-4523-A0C8-27D8CF7632FD}.Release|anycpu.Build.0 = Release|anycpu
+		{A9E5A76B-1CE7-4870-8925-EE445ED73A80}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{A9E5A76B-1CE7-4870-8925-EE445ED73A80}.Debug|anycpu.Build.0 = Debug|anycpu
+		{A9E5A76B-1CE7-4870-8925-EE445ED73A80}.Release|anycpu.ActiveCfg = Release|anycpu
+		{A9E5A76B-1CE7-4870-8925-EE445ED73A80}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
