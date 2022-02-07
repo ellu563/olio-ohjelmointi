@@ -14,17 +14,17 @@ namespace Vehicle
             this.doors = 0;
         }
 
-        public Car(string make, string model, int modelYear, double price, double engine, string type, int doors) : base(make, model, modelYear, price)
+        public Car(string make, string model, int modelYear, double price, double engine, string type, int doors)
+            : base(make, model, modelYear, price)
         {
             this.engine = engine;
             this.type = type;
             this.doors = doors;
         }
 
-        
         public override void PrintInformation() 
         {
-            base.PrintInformation(); // eli ensi tulostetaa mitä vehicle luokan print infossa tehtiin
+            base.PrintInformation(); 
             Console.WriteLine($"Koneen koko: {this.engine}, Malli: {this.type}, Ovien lukumaara: {this.doors}");
         }
 

@@ -21,7 +21,7 @@ namespace Vehicle
 
         public double CalculateConsumption()
         {
-            double calc = load * consumption; // tarkista viel tä onko oikei
+            double calc = load * consumption; 
             return calc;
         }
 

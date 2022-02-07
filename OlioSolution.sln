@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Literature", "BookAndAuthor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicle", "Vehicle\Vehicle.csproj", "{A9E5A76B-1CE7-4870-8925-EE445ED73A80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store", "Store\Store.csproj", "{BCF88A09-9186-4181-B82F-2ADDC1306D72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -45,6 +47,10 @@ Global
 		{A9E5A76B-1CE7-4870-8925-EE445ED73A80}.Debug|anycpu.Build.0 = Debug|anycpu
 		{A9E5A76B-1CE7-4870-8925-EE445ED73A80}.Release|anycpu.ActiveCfg = Release|anycpu
 		{A9E5A76B-1CE7-4870-8925-EE445ED73A80}.Release|anycpu.Build.0 = Release|anycpu
+		{BCF88A09-9186-4181-B82F-2ADDC1306D72}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{BCF88A09-9186-4181-B82F-2ADDC1306D72}.Debug|anycpu.Build.0 = Debug|anycpu
+		{BCF88A09-9186-4181-B82F-2ADDC1306D72}.Release|anycpu.ActiveCfg = Release|anycpu
+		{BCF88A09-9186-4181-B82F-2ADDC1306D72}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

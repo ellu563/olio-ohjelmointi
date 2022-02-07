@@ -3,12 +3,12 @@ namespace Vehicle
 {
     public abstract class Vehicle
     {
-        protected string make; // merkki entiiä miks sen nimi on make eikä mark
+        protected string make; // merkki
         protected string model;
         protected int modelYear;
         protected double price;
 
-        public Vehicle()
+        protected Vehicle()
         {
             this.make = string.Empty;
             this.model = string.Empty;
