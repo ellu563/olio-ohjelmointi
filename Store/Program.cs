@@ -7,6 +7,8 @@ namespace Store
     {
         public static void Main(string[] args)
         {
+            // OSA 1
+
             Console.WriteLine("----interface/product example");
 
             List<Product> productsList = new List<Product>();
@@ -27,14 +29,44 @@ namespace Store
                 }
                 // Console.WriteLine(currentProduct.ToString());
             }
-           
+
+            // OSA 4
             Console.WriteLine("STORE:");
             Console.WriteLine();
 
-            StoreLuokka myStore = new StoreLuokka("buu-kauppa");
-            myStore.AddProduct(new Product("makuupussi", 124.99, 450)); // uus tuoe
+            StoreLuokka myStore = new StoreLuokka("buu-kauppa", 10000);
+            myStore.AddProduct(new Product("makuupussi", 124.99, 450));
+            myStore.AddProduct(new Product("kalastusveje", 130, 50));
+
+            myStore.AddCustomer(new Customer("Paulikki", 400));
+            myStore.AddCustomer(new Customer("Annikki", 500));
 
             myStore.PrintProduct(); // ja tulostetaan
+            myStore.PrintCustomers();
+
+            // OSA 2
+
+            Console.WriteLine();
+            Console.WriteLine("Etsitään asiakasta");
+            Console.WriteLine();
+
+            List<Customer> customersList = new List<Customer>();
+
+            customersList.Add(new Customer("Asiakas Hannu", 500)); 
+            customersList.Add(new Customer("Asiakas Pentti", 1500));
+            customersList.Add(new Customer("Asiakas Raineri", 6000));
+
+            foreach (Customer currentCustomer in customersList) // currentproduct muuttuja keksitty, ekalla kierroksella teltta... tokalla at...
+            {
+                if (currentCustomer.GetCustomer("Asiakas Hannu") != null)
+                {
+                    Console.WriteLine("Asiakas Hannu löytyi");
+                    Console.WriteLine("Asiakas on ostanut tällä summalla tuotteita ja saanut bonusta: " + currentCustomer.GetBonus() + " €");
+                    Console.WriteLine("---------");
+                }
+                // Console.WriteLine(currentProduct.ToString());
+            }
+
         }
     }
 }
