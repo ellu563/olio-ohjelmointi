@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Literature
 {
-    public class Book
+    public class Book : IComparable<Book>
     {
 
         public string name;
@@ -38,6 +38,12 @@ namespace Literature
         public Book(string author)
         {
             this.author = author;
+        }
+
+        // icomparable tehtävään
+        public int CompareTo(Book other)
+        {
+            return this.price.CompareTo(other.price);
         }
 
 

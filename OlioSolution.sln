@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicle", "Vehicle\Vehicle.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store", "Store\Store.csproj", "{BCF88A09-9186-4181-B82F-2ADDC1306D72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuntiharjoitusta", "Tuntiharjoitusta\Tuntiharjoitusta.csproj", "{914AE862-C896-4EF1-BDB8-7BEEE4C4E815}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -51,6 +53,10 @@ Global
 		{BCF88A09-9186-4181-B82F-2ADDC1306D72}.Debug|anycpu.Build.0 = Debug|anycpu
 		{BCF88A09-9186-4181-B82F-2ADDC1306D72}.Release|anycpu.ActiveCfg = Release|anycpu
 		{BCF88A09-9186-4181-B82F-2ADDC1306D72}.Release|anycpu.Build.0 = Release|anycpu
+		{914AE862-C896-4EF1-BDB8-7BEEE4C4E815}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{914AE862-C896-4EF1-BDB8-7BEEE4C4E815}.Debug|anycpu.Build.0 = Debug|anycpu
+		{914AE862-C896-4EF1-BDB8-7BEEE4C4E815}.Release|anycpu.ActiveCfg = Release|anycpu
+		{914AE862-C896-4EF1-BDB8-7BEEE4C4E815}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

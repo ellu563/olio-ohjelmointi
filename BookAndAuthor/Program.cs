@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Literature
 {
@@ -6,7 +7,32 @@ namespace Literature
     {
         public static void Main(string[] args)
         {
-           
+
+            // IComparable rajapinta tehtävä
+
+            List<Book> books = new List<Book>();
+            books.Add(new Book("Kissanhoito kirja", "Mattehlzon", "Penan kustannus", 38, "978-123-124-1"));
+            books.Add(new Book("Koiranhoito kirja", "Pauli Pennanen", "Kirjakustannus Oy", 35, "978-123-123-1"));
+
+            Console.WriteLine("Toteutetaan IComparable rajapinta ja järjestetään hinnan mukaan");
+            Console.WriteLine("Kirjat normaalissa järjestyksessä:");
+            foreach (Book b in books) // käyän lista läpi
+            {
+                Console.WriteLine(b.ToString());
+            }
+
+            Console.WriteLine();
+            // halutaan järjestykseen
+
+            books.Sort();
+
+            Console.WriteLine("Sortilla järjestetty lista hinnan mukaan, ylimpänä se kirja jolla halvin hinta:");
+
+            foreach (Book b in books) // käyän lista läp
+            {
+                Console.WriteLine(b.ToString());
+            }
+
             /*
             Book book1 = new Book();
 
@@ -22,11 +48,12 @@ namespace Literature
             Book book3 = new Book("Aapinen", "Pena Pennanen", "Kirjakustannus Oy", 35, "978-123-123-1");
 
             // Isbn
-
+            Console.WriteLine();
             Console.WriteLine("Kirjan " + book2.name + ", ISBN numero on: " + book2.Isbn);
 
 
             book3.GetBookDetails("978-123-123-1");
+            Console.WriteLine();
 
             // Price
 
@@ -35,6 +62,7 @@ namespace Literature
             // ChangeTheme staattista metodia kutsutaan luokannimi.metodi
             Book.ChangeTheme("Joku kirjallisuus");
 
+            Console.WriteLine();
 
             // Author (1 tehtävä)
             Book authorioz1 = new Book("Rainer the author");
@@ -46,6 +74,7 @@ namespace Literature
 
             // PrintInformation
             author1.PrintInformation();
+            Console.WriteLine();
 
             Author author2 = new Author();
             author2.PrintInformation();
