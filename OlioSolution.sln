@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store", "Store\Store.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuntiharjoitusta", "Tuntiharjoitusta\Tuntiharjoitusta.csproj", "{914AE862-C896-4EF1-BDB8-7BEEE4C4E815}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{54C5EBA7-E01E-482B-99EB-D372DF7DF677}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -57,6 +59,10 @@ Global
 		{914AE862-C896-4EF1-BDB8-7BEEE4C4E815}.Debug|anycpu.Build.0 = Debug|anycpu
 		{914AE862-C896-4EF1-BDB8-7BEEE4C4E815}.Release|anycpu.ActiveCfg = Release|anycpu
 		{914AE862-C896-4EF1-BDB8-7BEEE4C4E815}.Release|anycpu.Build.0 = Release|anycpu
+		{54C5EBA7-E01E-482B-99EB-D372DF7DF677}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{54C5EBA7-E01E-482B-99EB-D372DF7DF677}.Debug|anycpu.Build.0 = Debug|anycpu
+		{54C5EBA7-E01E-482B-99EB-D372DF7DF677}.Release|anycpu.ActiveCfg = Release|anycpu
+		{54C5EBA7-E01E-482B-99EB-D372DF7DF677}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
