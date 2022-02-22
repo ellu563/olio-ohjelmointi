@@ -3,71 +3,81 @@ namespace FileExcercise
 {
     public class Book
     {
-        public string title;
-        public string author;
-        public string id;
-        public double price;
+        private string title;
+        private string author;
+        private string id;
+        private double price;
+
+        public string Title { get => title; set => title = value; }
+        public string Author { get => author; set => author = value; }
+        public string Id { get => id; set => id = value; }
+        public double Price { get => price; set => price = value; }
 
         // empty constructor, jossei oo parametriä
         public Book()
         {
-            this.title = string.Empty;
-            this.author = string.Empty;
-            this.id = string.Empty;
-            this.price = 0; // alustetaan tässä
+            this.Title = string.Empty;
+            this.Author = string.Empty;
+            this.Id = string.Empty;
+            this.Price = 0; // alustetaan tässä
         }
         // constructor with parameter
         public Book(string title)
         {
-            this.title = title; // eli tässä talletetaan se aapinen
-            this.author = string.Empty;
-            this.id = string.Empty;
-            this.price = 0;
+            this.Title = title; // eli tässä talletetaan se aapinen
+            this.Author = string.Empty;
+            this.Id = string.Empty;
+            this.Price = 0;
         }
         // many parameters
         public Book(string title, string author, string id, double price)
         {
-            this.title = title;
-            this.author = author;
-            this.id = id;
+            this.Title = title;
+            this.Author = author;
+            this.Id = id;
             // Setid(id);
-            this.price = price;
+            this.Price = price;
         }
 
         public string GetBookInformation()
         {
-            return this.author + ", " + this.title + ", " + this.id + "," +this.price;
+            return this.Author + ", " + this.Title + ", " + this.Id + "," +this.Price;
         }
 
         public void SetId(string idValue)
         {
             if (idValue.Length == 5) // onko 5 merkkiä pitkä
             {
-                this.id = idValue;
+                this.Id = idValue;
             }
             else
             {
-                this.id = "not valid";
+                this.Id = "not valid";
             }
         }
 
         public void CompareBook(Book book) 
         {
             // pitää toteuttaa kaikki eri vaihtoehdot
-            if (this.price > book.price)
+            if (this.Price > book.Price)
             {
-                Console.WriteLine(this.title + " on kalliimpi kuin " + book.title);
+                Console.WriteLine(this.Title + " on kalliimpi kuin " + book.Title);
             }
-            else if (this.price < book.price)
+            else if (this.Price < book.Price)
             {
-                Console.WriteLine(book.title + " on kalliimpi kuin " + this.title);
+                Console.WriteLine(book.Title + " on kalliimpi kuin " + this.Title);
             }
             else
             {
-                Console.WriteLine(this.title + " on kalliimpi kuin " + book.title);
+                Console.WriteLine(this.Title + " on kalliimpi kuin " + book.Title);
             }
-            Console.WriteLine("kutsuva olio" + this.title);
-            Console.WriteLine("parametrinä tuleva olio" + book.title);
+            Console.WriteLine("kutsuva olio" + this.Title);
+            Console.WriteLine("parametrinä tuleva olio" + book.Title);
+        }
+
+        internal string PrintInfo()
+        {
+            return $"kirjan nimi: {this.Title}, kirjan tekijä: {this.Author}, kirjan id: {this.Id}, kirjan hinta: {this.Price}";
         }
     }
 }

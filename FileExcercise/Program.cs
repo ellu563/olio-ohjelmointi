@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using Newtonsoft.Json;
 
 namespace FileExcercise
@@ -9,9 +10,9 @@ namespace FileExcercise
     {
         public static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8; // Ä:t ja ö:t saa toimimaa
+            Console.OutputEncoding = Encoding.UTF8; // Ä:t ja ö:t saa toimimaa
 
-            string filePath = @"/Users/ellu/Projects/OlioSolution/FileExcercise/EmptyTextFile.txt";
+            string filePath = "/Users/ellu/Projects/OlioSolution/FileExcercise/EmptyTextFile.txt";
 
             FileManager fm = new FileManager(filePath);
             // luodaan olio FileManager luokasta
@@ -25,19 +26,20 @@ namespace FileExcercise
             ReadFile();
             WriteJsonFile();
             ReadJsonFile();
+        }
 
             static void WriteFile()
             {
-                const string path = @"/Users/ellu/Projects/OlioSolution/FileExcercise/data.txt";
+                const string path = "/Users/ellu/Projects/OlioSolution/FileExcercise/data.txt";
 
                 if (File.Exists(path))
                 {
                     string[] createText = { "Hello 1", "Hello2", "Hello 3" };
-                    File.WriteAllLines(path, createText, System.Text.Encoding.UTF8); // File.WriteAllLines(string path, string[] contents, System.Text.Encoding encoding);
+                    File.WriteAllLines(path, createText, Encoding.UTF8); // File.WriteAllLines(string path, string[] contents, System.Text.Encoding encoding);
                     // kirjoittaa uudet rivit tiedostoon (korvaa vanhan sisällön) HUOM RIVIT eli monta riviä
 
                     string appendText = "This is extra text from append" + Environment.NewLine;
-                    File.AppendAllText(path, appendText, System.Text.Encoding.UTF8); // File.AppendAllText(string path, string contents); // hae googlella tolla nimellä
+                    File.AppendAllText(path, appendText, Encoding.UTF8); // File.AppendAllText(string path, string contents); // hae googlella tolla nimellä
                     // AppendAlltext lisää tekstin tiedostoon olemassa olevan sisällön jatkoksi
                 }
 
@@ -48,28 +50,57 @@ namespace FileExcercise
             {
                 Console.WriteLine("\nReading file data.txt");
 
-                const string path = @"/Users/ellu/Projects/OlioSolution/FileExcercise/data.txt";
+                const string path = "/Users/ellu/Projects/OlioSolution/FileExcercise/data.txt";
 
                 if (File.Exists(path))
                 {
-                    File.ReadAllLines(path); // File.ReadAllLines(string path);
+                    string[] lines = File.ReadAllLines(path); // File.ReadAllLines(string path);
+                    foreach (string s in lines)
+                    {
+                    Console.WriteLine(s);
+                    }
                 }
 
             }
 
-            static void WriteJsonFile()
+        static void ReadJsonFile()
+        {
+            Console.WriteLine("\nReading Json data from books.txt file");
+
+            const string jsonFile = "/Users/ellu/Projects/OlioSolution/FileExcercise/books.txt";
+
+            // File.ReadAllText(string path, Encoding.UTF8);
+            // JsonConvert.Deserializeobject<T>(string data);
+            if (File.Exists(jsonFile))
             {
-                Console.WriteLine("\nWriting Json data to books.txt file");
+                List<Book> bookList = JsonConvert.DeserializeObject<List<Book>>(File.ReadAllText(jsonFile, Encoding.UTF8));
+                /*
+                 string content = File.ReadAllText(jsonFile);
+                Console.WriteLine(content);
+                */
+                foreach (Book b in bookList)
+                {
+                    Console.WriteLine(b.PrintInfo()); // HUOM OLION TULOSTUS !!!!!
+                }
+            }
+            // Deserialize = Merkkijonosta olioksi
+            
+        }
 
-                const string jsonFile = @"/Users/ellu/Projects/OlioSolution/FileExcercise/books.txt";
+        static void WriteJsonFile()
+            {
+                Console.WriteLine("\nWriting Json data to books.txt file"); // huom. jossei toimi tarkista pitääkö sen olla .json.. 
 
+                const string jsonFile = "/Users/ellu/Projects/OlioSolution/FileExcercise/books.txt";
+
+            if (File.Exists(jsonFile))
+            {
                 List<Book> bookList = new List<Book>();
-                bookList.Add(new Book("Fingerpori", "are", "123456789", 18));
-                bookList.Add(new Book("Fingerpori 2", "are", "123456788", 19));
+                bookList.Add(new Book("Kissan kirja", "are", "123456789", 18));
+                bookList.Add(new Book("Penan kirja", "are", "123456788", 19));
 
-                // täs nyt yritän vaa yhdellä rivillä tehdä tätä
                 File.WriteAllText(jsonFile, JsonConvert.SerializeObject(bookList));
-
+            }
                 // nää on ne aikasemmat: tallennan ne talteen vain tähän
                 /*
                 // File.WriteAllText(string path, string contents);
@@ -82,18 +113,5 @@ namespace FileExcercise
                 // https://www.newtonsoft.com/json/help/html/SerializeWithJsonSerializerToFile.htm
             }
 
-            static void ReadJsonFile()
-            {
-                Console.WriteLine("\nReading Json data from books.txt file");
-
-                const string jsonFile = @"/Users/ellu/Projects/OlioSolution/FileExcercise/books.txt";
-
-                File.ReadAllText(jsonFile); // File.ReadAllText(string path, Encoding.UTF8); HUOM NÄÄ ON NE MITÄ TÄSSÄ OLI
-                JsonConvert.DeserializeObject<Book>(jsonFile); // JsonConvert.Deserializeobject<T>(string data);
-
-                // Deserialize = Merkkijonosta olioksi
-
-            }
-        }
+      }
     }
-}

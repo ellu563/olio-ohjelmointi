@@ -1,13 +1,1 @@
-﻿var books = [
-{
-"title": "penan kirja",
-"author": "raineri",
-"id": "123456789",
-"price": 20,
-},
-{
-"title": "penan kirja",
-"author": "raineri",
-"id": "123456788",
-"price": 21,
-}];
+[{"Title":"Kissan kirja","Author":"are","Id":"123456789","Price":18.0},{"Title":"Penan kirja","Author":"are","Id":"123456788","Price":19.0}]

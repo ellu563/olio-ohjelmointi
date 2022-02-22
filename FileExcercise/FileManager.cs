@@ -20,18 +20,20 @@ namespace FileExcercise
         // Constructor
         public FileManager()
         {
-            this.filePath = String.Empty;
+            this.FilePath = String.Empty;
         }
 
         // Constructor
         public FileManager(string filePath)
         {
-            this.filePath = String.Empty;
+            this.FilePath = filePath; // huom tähä vaihettu, se oli String.Empty
         }
+
+        public string FilePath { get => filePath; set => filePath = value; }
 
         public string ReadWords()
         {
-            if (!File.Exists(filePath)) 
+            if (!File.Exists(FilePath))
             {
                 throw new WordListNotFoundException("Listaa ei löydy");
             }
@@ -63,21 +65,21 @@ namespace FileExcercise
          */
         private string ReadFile()
         {
-            if (!File.Exists(filePath)) // joku virhe jossain ni etsi se
+            if (!File.Exists(FilePath)) 
             {
                 // Throw exception if file does not exists
                 throw new FileNotFoundException("File not available");
             }
 
-            string directoryName = Path.GetDirectoryName(filePath);
-            string fileName = Path.GetFileName(filePath);
-            string fileExtension = Path.GetExtension(filePath);
+            string directoryName = Path.GetDirectoryName(FilePath);
+            string fileName = Path.GetFileName(FilePath);
+            string fileExtension = Path.GetExtension(FilePath);
 
             Console.WriteLine("directoryName: " + directoryName);
             Console.WriteLine("fileName: " + fileName);
             Console.WriteLine("fileExtension: " + fileExtension);
 
-            string fileContent = File.ReadAllText(filePath, Encoding.UTF8);
+            string fileContent = File.ReadAllText(FilePath, Encoding.UTF8);
             return fileContent;
         }
     }
