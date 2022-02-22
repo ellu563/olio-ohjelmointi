@@ -1,0 +1,13 @@
+﻿var books = [
+{
+"title": "penan kirja",
+"author": "raineri",
+"id": "123456789",
+"price": 20,
+},
+{
+"title": "penan kirja",
+"author": "raineri",
+"id": "123456788",
+"price": 21,
+}];

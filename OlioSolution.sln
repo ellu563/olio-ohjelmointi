@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuntiharjoitusta", "Tuntiha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{54C5EBA7-E01E-482B-99EB-D372DF7DF677}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurances", "Insurances\Insurances.csproj", "{46EF2A23-6E7D-4470-9CD8-951E8170DDAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileExcercise", "FileExcercise\FileExcercise.csproj", "{E30A1F24-9947-40BB-93E4-D5110595AFE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -63,6 +67,14 @@ Global
 		{54C5EBA7-E01E-482B-99EB-D372DF7DF677}.Debug|anycpu.Build.0 = Debug|anycpu
 		{54C5EBA7-E01E-482B-99EB-D372DF7DF677}.Release|anycpu.ActiveCfg = Release|anycpu
 		{54C5EBA7-E01E-482B-99EB-D372DF7DF677}.Release|anycpu.Build.0 = Release|anycpu
+		{46EF2A23-6E7D-4470-9CD8-951E8170DDAA}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{46EF2A23-6E7D-4470-9CD8-951E8170DDAA}.Debug|anycpu.Build.0 = Debug|anycpu
+		{46EF2A23-6E7D-4470-9CD8-951E8170DDAA}.Release|anycpu.ActiveCfg = Release|anycpu
+		{46EF2A23-6E7D-4470-9CD8-951E8170DDAA}.Release|anycpu.Build.0 = Release|anycpu
+		{E30A1F24-9947-40BB-93E4-D5110595AFE2}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{E30A1F24-9947-40BB-93E4-D5110595AFE2}.Debug|anycpu.Build.0 = Debug|anycpu
+		{E30A1F24-9947-40BB-93E4-D5110595AFE2}.Release|anycpu.ActiveCfg = Release|anycpu
+		{E30A1F24-9947-40BB-93E4-D5110595AFE2}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
