@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurances", "Insurances\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileExcercise", "FileExcercise\FileExcercise.csproj", "{E30A1F24-9947-40BB-93E4-D5110595AFE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tentti", "Tentti\Tentti.csproj", "{5129D47B-53F7-4C4F-A9C8-A7128C6D6342}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|anycpu = Debug|anycpu
@@ -75,6 +77,10 @@ Global
 		{E30A1F24-9947-40BB-93E4-D5110595AFE2}.Debug|anycpu.Build.0 = Debug|anycpu
 		{E30A1F24-9947-40BB-93E4-D5110595AFE2}.Release|anycpu.ActiveCfg = Release|anycpu
 		{E30A1F24-9947-40BB-93E4-D5110595AFE2}.Release|anycpu.Build.0 = Release|anycpu
+		{5129D47B-53F7-4C4F-A9C8-A7128C6D6342}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{5129D47B-53F7-4C4F-A9C8-A7128C6D6342}.Debug|anycpu.Build.0 = Debug|anycpu
+		{5129D47B-53F7-4C4F-A9C8-A7128C6D6342}.Release|anycpu.ActiveCfg = Release|anycpu
+		{5129D47B-53F7-4C4F-A9C8-A7128C6D6342}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

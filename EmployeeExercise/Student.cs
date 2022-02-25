@@ -3,6 +3,8 @@ namespace EmployeeExercise
 {
     public class Student
     {
+        // HUOM TÄMÄ ON: tunnilla käyty esimerkki
+
         public string etunimi;
         public string sukunimi;
 
@@ -19,7 +21,6 @@ namespace EmployeeExercise
         public override string ToString()
         {
             return $"{this.sukunimi} {this.etunimi}"; // palauttaa merkkijonon ja palaa takasin
-            // toho ku jättää ton välin ni tulee välilyönti
         }
     }
 }

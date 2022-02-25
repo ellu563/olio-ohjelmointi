@@ -18,7 +18,7 @@ namespace CarExcercise
 
             car2.Accelerate(15);
             Console.WriteLine("Uusi nopeus on " + car2.speed);
-            Console.WriteLine("Blblabla");
+            Console.WriteLine();
 
             car2.Brake();
             Console.WriteLine("Jarrutuksen jälkeen " + car2.speed);

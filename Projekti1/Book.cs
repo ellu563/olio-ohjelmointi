@@ -36,7 +36,7 @@ namespace BookExercise
 
         public string GetBookInformation()
         {
-            return this.author + ", " + this.title + ", " + this.id + "," +this.price;
+            return this.author + ", " + this.title + ", " + this.id + ", " +this.price + " euroa";
         }
 
         public void SetId(string idValue)
@@ -62,12 +62,12 @@ namespace BookExercise
             {
                 Console.WriteLine(book.title + " on kalliimpi kuin " + this.title);
             }
-            else
+            else if(this.price == book.price)
             {
-                Console.WriteLine(this.title + " on kalliimpi kuin " + book.title);
+                Console.WriteLine(this.title + " ja " + book.title + " ovat samanhintaisia");
             }
-            Console.WriteLine("kutsuva olio" + this.title);
-            Console.WriteLine("parametrinä tuleva olio" + book.title);
+            Console.WriteLine("kutsuva olio: " + this.title);
+            Console.WriteLine("parametrinä tuleva olio: " + book.title);
         }
     }
 }

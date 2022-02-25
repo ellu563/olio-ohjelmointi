@@ -112,7 +112,7 @@ namespace Literature
         // ChangeTheme metodi
         public static void ChangeTheme(string themeName)
         {
-            Console.WriteLine("Teeman nimi on " + themeName); // tässäkö se teeman nimi nyt annetaan
+            Console.WriteLine("Teeman nimi on " + themeName); 
         }
 
 

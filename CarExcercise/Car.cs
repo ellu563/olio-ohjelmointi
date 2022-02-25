@@ -18,7 +18,7 @@ namespace CarExcercise
             this.brand = Console.ReadLine();
             Console.WriteLine("Anna nopeus");
            
-            if ((double.TryParse(Console.ReadLine(), out this.speed)))
+            if ((!double.TryParse(Console.ReadLine(), out this.speed)))
             {
               this.speed = 0;
             }  

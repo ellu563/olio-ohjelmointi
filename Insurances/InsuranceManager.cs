@@ -61,7 +61,7 @@ namespace Insurances
         {
             Console.WriteLine("löytyi:");
      
-            foreach (Insurance c in lista)
+            foreach (Insurance c in lista) // huom huom
             {
                 if (c.GetSpecies() == species && isNeutered == c.GetNeutered())
                 {
