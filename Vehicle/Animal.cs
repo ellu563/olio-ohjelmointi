@@ -21,7 +21,7 @@ namespace Vehicle
             this.age = age;
         }
 
-        public virtual void PrintInfo() // eli täst tulee nyt virtual void ni voiaa ylikirjottaa tuol birdissä
+        public virtual void PrintInfo() // virtual void = voidaan ylikirjottaa tuolla birdissä
         {
             Console.WriteLine($"Nimi {this.name}, Ikä: {this.age}");
         }
@@ -36,8 +36,6 @@ namespace Vehicle
         {
             return this.name;
         }
-
-        // abstrakti juttu
 
         // abstract public void Speak(); // eli bird luokassa sit tehää se Speak()
     }

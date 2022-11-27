@@ -5,7 +5,7 @@ namespace Literature
     {
         public string name;
         public string birthday;
-        private Book book; // nyt on tehty se ominaisuus
+        private Book book; // ominaisuus
 
         public Author()
         {

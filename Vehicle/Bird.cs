@@ -2,9 +2,8 @@
 namespace Vehicle
 {
     public class Bird : Animal // perii Animal luokan
-        // tähä tulee virhe ni se luo sen Speak metodin ku painaa potential fixes
     {
-        // eli name ja age kentät on myös täällä köytässä kun perii ja tän bird luokan kentät on sit:
+        // eli name ja age kentät on myös täällä käytössä kun perii, ja tän bird luokan kentät on sit:
         protected string birdClass;
         protected int legCount;
 
@@ -15,7 +14,7 @@ namespace Vehicle
             this.legCount = 2;
         }
 
-        public Bird(string name, int age, string birdClass, int legs) : base(name, age) // eli viitaa toho Animal luokkaan tolla base
+        public Bird(string name, int age, string birdClass, int legs) : base(name, age) // eli viitataan tuohon Animal luokkaan tuolla base
             // 4 parametriä, tuol basessa on vaa nyt ne animal luokan kentät
         {
             Console.WriteLine("Bird Lapsiluokan muodostin: ");
@@ -23,7 +22,6 @@ namespace Vehicle
             this.legCount = legs;
         }
 
-        // se teki nää molemmat tuolt overridesistä muistaakseni mut toi kirjotettii ite
         public override bool Equals(object obj)
         {
             return obj is Bird bird && // onko bird tyyppinen
@@ -38,7 +36,7 @@ namespace Vehicle
 
         public override void PrintInfo() // tää overridaa ton animal luokan printinfon, ja tonne toisee pitää laittaa se virtual void
         {
-            base.PrintInfo(); // eli ensi tulostetaa mitä animal luokan print infossa tehtiin
+            base.PrintInfo(); // eli ensi tulostetaan mitä animal luokan print infossa tehtiin
             Console.WriteLine($"luokka: {this.birdClass} jalkojen määrä: {this.legCount}");
         }
 

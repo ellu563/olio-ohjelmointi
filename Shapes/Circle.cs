@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Shapes
 {
-    public class Circle : Shape // perii shape luokan. virhe: implement, ne metodit sieltä shape luokasta
+    public class Circle : Shape // perii shape luokan
     {
         private double radius;
 

@@ -21,7 +21,7 @@ namespace Store
 
         public Product GetProduct(string name) // pitää returnata nää molemmat ku ei oo void
         {
-            if (name.ToLower() == this.name.ToLower()) // ei oo tällee väliö onko isoja vai pieniä kirjaimia uimapatja UImapatja
+            if (name.ToLower() == this.name.ToLower()) // ei ole väliä onko isoja vai pieniä kirjaimia uimapatja UImapatja
             // if(name.ToLower().Equals(this.name.ToLower()))
             {
                 return this;
