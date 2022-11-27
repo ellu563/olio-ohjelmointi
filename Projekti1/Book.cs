@@ -8,7 +8,7 @@ namespace BookExercise
         public string id;
         public double price;
 
-        // empty constructor, jossei oo parametriä
+        // empty constructor, jossa ei ole parametrejä
         public Book()
         {
             this.title = string.Empty;

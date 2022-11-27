@@ -12,9 +12,8 @@ namespace Store
             Console.WriteLine("----interface/product example");
 
             List<Product> productsList = new List<Product>();
-            // using system collection generator... korjataa se punane (shiw potential fixes)
 
-            productsList.Add(new Product("Teltta", 124.99, 450)); // voi tehä yks kerrallaa tällee tai sit sen ison listan
+            productsList.Add(new Product("Teltta", 124.99, 450)); // voi tehdä yks kerrallaan tälleen tai sit sen ison listan
             productsList.Add(new Product("Aurinkotuoli", 20.99, 300));
             productsList.Add(new Product("Kirves", 199.99, 250));
 

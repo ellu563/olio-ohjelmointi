@@ -5,7 +5,7 @@ namespace Shapes
     {
         private double radius;
 
-        public Circle() // voi tehä aina nää molemmat jos ei tiedetä millasia oliota tehdään
+        public Circle() // voi tehdä molemmat jos ei tiedetä millasia oliota tehdään
         {
             this.radius = 0;
         }
@@ -17,7 +17,7 @@ namespace Shapes
             // this.type = "CIRCLE"; //huom. tässä vaa kovakoodataan se type
         }
 
-        // implementoidessa ne metodit tulee sitte tänne
+        // implementoidessa ne metodit tulee tänne
         public override double GetArea()
         {
             return Math.PI * this.radius * this.radius; // ympyrän pinta-ala

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Store
 {
-    public class StoreLuokka : IProducts, ICustomers // implement interface
+    public class StoreLuokka : IProducts, ICustomers 
     {
         private string name;
         private double liikevaihto;

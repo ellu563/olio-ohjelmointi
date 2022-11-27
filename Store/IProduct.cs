@@ -5,6 +5,6 @@ namespace Store
     {
         Product GetProduct(string name); 
 
-        double CalculateTotal(); // ei tuu runkoo
+        double CalculateTotal(); // ei tule runkoa
     }
 }

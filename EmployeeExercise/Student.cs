@@ -3,8 +3,6 @@ namespace EmployeeExercise
 {
     public class Student
     {
-        // HUOM TÄMÄ ON: tunnilla käyty esimerkki
-
         public string etunimi;
         public string sukunimi;
 

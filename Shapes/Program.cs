@@ -9,7 +9,7 @@ namespace Shapes
         {
             List<Shape> allShapes = new List<Shape> // aina using system collections generic
             {
-                new Circle("red", 6), // ympyrälle väri ja säde, ja pitää tehdä sopiva constructori
+                new Circle("red", 6), // ympyrälle väri ja säde, ja tehdään sopiva constructori
                 new Circle("blue", 2),
                 
                 new Rectangle("yellow", 2, 3), 

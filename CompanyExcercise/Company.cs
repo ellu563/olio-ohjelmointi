@@ -33,7 +33,7 @@ namespace CompanyExcercise
         // kopiointimuodostin
         public Company(Company previousCompany) // tulee toinen olio minkä nimi on previousCompany
         {
-            // olio on saamaa tyyppiä ku toi edellinen
+            // olio on saamaa tyyppiä kun edellinen
             this.title = previousCompany.title;
             this.address = previousCompany.address;
             this.phone = previousCompany.phone;

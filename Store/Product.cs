@@ -14,7 +14,7 @@ namespace Store
             this.amount = amount;
         }
 
-        public double CalculateTotal() // nää sai sielt show potential fixes
+        public double CalculateTotal() 
         {
             return this.price * this.amount;
         }

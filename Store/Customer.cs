@@ -28,7 +28,7 @@ namespace Store
             }
         }
 
-        public Customer GetCustomer(string name) // pitää returnata nää molemmat ku ei oo void
+        public Customer GetCustomer(string name) // returnataan molemmat koska ei ole voids
         {
             if (name.ToLower() == this.name.ToLower()) 
            

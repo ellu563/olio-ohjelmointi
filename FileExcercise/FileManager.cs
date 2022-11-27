@@ -44,7 +44,7 @@ namespace FileExcercise
             
             return content; 
 
-            /* tää on se vanha mikä täs oli:
+            /* vanha koodi:
              string content = String.Empty;
 
             try

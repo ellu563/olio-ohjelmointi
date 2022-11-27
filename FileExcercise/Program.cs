@@ -101,7 +101,7 @@ namespace FileExcercise
 
                 File.WriteAllText(jsonFile, JsonConvert.SerializeObject(bookList));
             }
-                // nää on ne aikasemmat: tallennan ne talteen vain tähän
+                // aikaisemmat:
                 /*
                 // File.WriteAllText(string path, string contents);
                 // JsonConvert.SerializeObject(Object value);
